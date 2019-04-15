@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/shared';
 
 export const Header = () => {
 	return (

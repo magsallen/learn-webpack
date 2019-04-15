@@ -2,13 +2,10 @@
   "name": "learn-webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "browser": "browser.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js"
   },
-  "styles": "styles.scss",
   "author": "",
   "license": "ISC",
   "dependencies": {

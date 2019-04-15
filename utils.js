@@ -1,5 +1,4 @@
 import React from 'react'
-
 export class OnReady extends React.Component {
   constructor(props) {
     super(props)

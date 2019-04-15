@@ -5,7 +5,7 @@ const port = 3000
 app.engine('html', require('ejs').renderFile);
 app.set('view engine','html');
 
-app.use('/static', express.static('./static')) // serving static css styles
+app.use('/static', express.static('./static')) // serving initial static css styles
 
 app.use('/dist', express.static('./dist')) // host files from webpack
 
