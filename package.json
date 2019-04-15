@@ -1,5 +1,5 @@
 {
-  "name": "webpack",
+  "name": "learn-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -22,6 +22,7 @@
     "@babel/plugin-syntax-jsx": "^7.2.0",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "webpack-cli": "^3.3.0"
   }

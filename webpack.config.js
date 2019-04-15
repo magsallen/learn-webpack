@@ -9,7 +9,7 @@ module.exports = {
 	},
 	module: {
 		rules: [
-			{ test: /\.js$/, use: 'babel-loader' } // babel webpack plugin - transpile js files with babel
+			{ test: /\.(js|jsx)$/, use: 'babel-loader' } // babel webpack plugin - transpile js files with babel
 		]
 	},
 	devtool: 'eval-source-map'
