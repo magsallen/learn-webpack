@@ -11,7 +11,7 @@ module.exports = {
 	module: {
 		rules: [
 			{ test: /\.(js|jsx)$/, use: 'babel-loader' }, // babel webpack plugin - transpile js files with babel
-			{ test: /\.(scss)$/, use: ['style-loader', 'css-loader', 'sass-loader'] }
+			{ test: /\.(scss)$/, use: ['style-loader', 'css-loader', 'sass-loader'] } // babel webpack plugin - transpile scss
 		]
 	},
 	devtool: 'eval-source-map'
