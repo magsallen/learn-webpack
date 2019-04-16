@@ -1,0 +1,12 @@
+h1, h3 {
+	@extend %shared-properties;
+}
+
+.header-component, .footer-component {
+	height: 50px;
+	background-color: $primary-color;
+
+	.header-text, .footer-text {
+		color: $override-text-color;
+	}
+}

@@ -1,0 +1,8 @@
+body {
+	@extend %shared-properties;
+	font-size: 18px;
+}
+
+.content-component {
+	background-color: $secondary-color
+}

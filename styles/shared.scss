@@ -1,31 +1,15 @@
 $primary-color: lightgrey;
 $secondary-color: lightyellow;
+
 $text-color: cornflowerblue;
 $override-text-color: green;
 
-%shared-properties {
+%shared-properties,
+.shared-properties {
 	font-family: 'Trebuchet MS', Arial, sans-serif;
 	color: $text-color;
 }
 
-h1, h3 {
-	@extend %shared-properties;
-}
+@import './header-footer';
+@import './body';
 
-body {
-	@extend %shared-properties;
-	font-size: 18px;
-}
-
-.header-component, .footer-component {
-	height: 50px;
-	background-color: $primary-color;
-
-	.header-text, .footer-text {
-		color: $override-text-color;
-	}
-}
-
-.content-component {
-	background-color: $secondary-color
-}
