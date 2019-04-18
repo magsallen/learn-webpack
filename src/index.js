@@ -8,10 +8,6 @@ import { Footer } from '../components/footer'
 import { OnReady } from './utils'
 import * as browser from '../browser'
 
-// import '../styles/shared';
-// import '../styles/header-footer';
-// import '../styles/body';
-
 ReactDOM.render(
 	<OnReady callback={() => browser.init()}>
 		<React.Fragment>

@@ -1,3 +1,4 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
@@ -15,12 +16,14 @@ module.exports = {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: '[name].css'
-		})
+		}),
+		new BundleAnalyzerPlugin()
 	],
 	module: {
 		rules: [
 			{ test: /\.(js|jsx)$/, exclude: /node_modules/, use: 'babel-loader' }, // babel webpack plugin - transpile js files with babel
 			{ test: /\.(css|scss)$/, exclude: /node_modules/, use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader', 'sass-loader'] } // babel webpack plugins - transpile scss to css
 		]
-	}
+	},
+	devtool: false
 };
